@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiterable Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Learn About Programing</h1>
+
+        <div class="filter-button text-center">
+            <button class="tag-button active" data-tags="all">All</button>
+            <button class="tag-button" data-tags="wordpress">Wordpress</button>
+            <button class="tag-button" data-tags="shopify">Shopify</button>
+            <button class="tag-button" data-tags="php">PHP</button>
+            <button class="tag-button" data-tags="react">React</button>
+        </div>
+
+        <div class="layout-btn">
+            <button id="gridViewBtn">
+                <i class="fa-solid fa-border-all"></i>
+            </button>
+            <button id="listViewBtn"><i class="fa-solid fa-list"></i></button>
+        </div>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search Here...">
+        </div>
+        <div class="wrapper">
+            <div class="language" data-tags="wordpress">
+                <div class="lan-img">
+                    <img src="images/wordpress.gif" alt="wordpress" />
+                </div>
+                <div class="lan-text">
+                    <h2>Wordpress</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                        eius neque qui tenetur magnam ut vero, nemo deleniti voluptatem
+                        quibusdam eaque fuga modi voluptatum culpa soluta? Ipsum illum
+                        magni minima!
+                    </p>
+                    <button data-popup="wordpress-popup-1" class="trigger">Read
+                        More</button>
+                </div>
+            </div>
+            <div class="language" data-tags="shopify">
+                <div class="lan-img">
+                    <img src="images/s1.jpg" alt="shopify" />
+                </div>
+                <div class="lan-text">
+                    <h2>shopify</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                        eius neque qui tenetur magnam ut vero, nemo deleniti voluptatem
+                        quibusdam eaque fuga modi voluptatum culpa soluta? Ipsum illum
+                        magni minima!
+                    </p>
+                    <button data-popup="shopify-popup-1" class="trigger">Read
+                        More</button>
+                </div>
+            </div>
+            <div class="language" data-tags="php">
+                <div class="lan-img">
+                    <img src="images/p2.jpg" alt="php" />
+                </div>
+                <div class="lan-text">
+                    <h2>PHP</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                        eius neque qui tenetur magnam ut vero, nemo deleniti voluptatem
+                        quibusdam eaque fuga modi voluptatum culpa soluta? Ipsum illum
+                        magni minima!
+                    </p>
+                    <button data-popup="php-popup-1" class="trigger">Read
+                        More</button>
+                </div>
+            </div>
+            <div class="language" data-tags="react">
+                <div class="lan-img">
+                    <img src="images/r3.png" alt="react" />
+                </div>
+                <div class="lan-text">
+                    <h2>react</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                        eius neque qui tenetur magnam ut vero, nemo deleniti voluptatem
+                        quibusdam eaque fuga modi voluptatum culpa soluta? Ipsum illum
+                        magni minima!
+                    </p>
+                    <button data-popup="react-popup-1" class="trigger">Read
+                        More</button>
+                </div>
+            </div>
+            <div class="language" data-tags="shopify">
+                <div class="lan-img">
+                    <img src="images/s3.avif" alt="shopify" />
+                </div>
+                <div class="lan-text">
+                    <h2>shopify</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                        eius neque qui tenetur magnam ut vero, nemo deleniti voluptatem
+                        quibusdam eaque fuga modi voluptatum culpa soluta? Ipsum illum
+                        magni minima!
+                    </p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="language" data-tags="wordpress">
+                <div class="lan-img">
+                    <img src="images/wordpress2.jpg" alt="wordpress" />
+                </div>
+                <div class="lan-text">
+                    <h2>wordpress</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                        eius neque qui tenetur magnam ut vero, nemo deleniti voluptatem
+                        quibusdam eaque fuga modi voluptatum culpa soluta? Ipsum illum
+                        magni minima!
+                    </p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="language" data-tags="php">
+                <div class="lan-img">
+                    <img src="images/p4.jpg" alt="php" />
+                </div>
+                <div class="lan-text">
+                    <h2>PHP</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                        eius neque qui tenetur magnam ut vero, nemo deleniti voluptatem
+                        quibusdam eaque fuga modi voluptatum culpa soluta? Ipsum illum
+                        magni minima!
+                    </p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="language" data-tags="shopify">
+                <div class="lan-img">
+                    <img src="images/s4.jpg" alt="shopify" />
+                </div>
+                <div class="lan-text">
+                    <h2>shopify</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                        eius neque qui tenetur magnam ut vero, nemo deleniti voluptatem
+                        quibusdam eaque fuga modi voluptatum culpa soluta? Ipsum illum
+                        magni minima!
+                    </p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="language" data-tags="wordpress">
+                <div class="lan-img">
+                    <img src="images/wordpress6.jpg" alt="wordpress" />
+                </div>
+                <div class="lan-text">
+                    <h2>wordpress</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                        eius neque qui tenetur magnam ut vero, nemo deleniti voluptatem
+                        quibusdam eaque fuga modi voluptatum culpa soluta? Ipsum illum
+                        magni minima!
+                    </p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="language" data-tags="react">
+                <div class="lan-img">
+                    <img src="images/r5.jpg" alt="react" />
+                </div>
+                <div class="lan-text">
+                    <h2>react</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                        eius neque qui tenetur magnam ut vero, nemo deleniti voluptatem
+                        quibusdam eaque fuga modi voluptatum culpa soluta? Ipsum illum
+                        magni minima!
+                    </p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="language" data-tags="php">
+                <div class="lan-img">
+                    <img src="images/p6.jpg" alt="php" />
+                </div>
+                <div class="lan-text">
+                    <h2>PHP</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                        eius neque qui tenetur magnam ut vero, nemo deleniti voluptatem
+                        quibusdam eaque fuga modi voluptatum culpa soluta? Ipsum illum
+                        magni minima!
+                    </p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="language" data-tags="wordpress">
+                <div class="lan-img">
+                    <img src="images/wordpress5.jpg" alt="wordpress" />
+                </div>
+                <div class="lan-text">
+                    <h2>wordpress</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                        eius neque qui tenetur magnam ut vero, nemo deleniti voluptatem
+                        quibusdam eaque fuga modi voluptatum culpa soluta? Ipsum illum
+                        magni minima!
+                    </p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="language" data-tags="react">
+                <div class="lan-img">
+                    <img src="images/r4.jpeg" alt="react" />
+                </div>
+                <div class="lan-text">
+                    <h2>react</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                        eius neque qui tenetur magnam ut vero, nemo deleniti voluptatem
+                        quibusdam eaque fuga modi voluptatum culpa soluta? Ipsum illum
+                        magni minima!
+                    </p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="language" data-tags="shopify">
+                <div class="lan-img">
+                    <img src="images/s4.jpg" alt="shopify" />
+                </div>
+                <div class="lan-text">
+                    <h2>shopify</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                        eius neque qui tenetur magnam ut vero, nemo deleniti voluptatem
+                        quibusdam eaque fuga modi voluptatum culpa soluta? Ipsum illum
+                        magni minima!
+                    </p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="language" data-tags="react">
+                <div class="lan-img">
+                    <img src="images/r6.jpg" alt="react" />
+                </div>
+                <div class="lan-text">
+                    <h2>react</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                        eius neque qui tenetur magnam ut vero, nemo deleniti voluptatem
+                        quibusdam eaque fuga modi voluptatum culpa soluta? Ipsum illum
+                        magni minima!
+                    </p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+        <button id="loadMoreButton">Load More</button>
+
+        <!-- pop modal -->
+        <div class="modal">
+            <div class="white-popup">
+                <span class="close-button">×</span>
+                <div class="popup-content wordpress-popup-1">
+                    <div class="thumbnails">
+                        <img class="thumbnail" src="images/wordpress.gif" alt="wordpress"
+                            data-full="images/wordpress.gif">
+                        <img class="thumbnail" src="images/wordpress2.jpg" alt="wordpress"
+                            data-full="images/wordpress2.jpg">
+                        <img class="thumbnail" src="images/wordpress3.png" alt="wordpress"
+                            data-full="images/wordpress3.png">
+                        <img class="thumbnail" src="images/wordpress4.png" alt="wordpress"
+                            data-full="images/wordpress4.png">
+                        <img class="thumbnail" src="images/wordpress5.jpg" alt="wordpress"
+                            data-full="images/wordpress5.jpg">
+                    </div>
+                    <div class="product-view">
+                        <img class="main-image" src="images/wordpress.gif" alt="Main Product Image">
+                    </div>
+                    <div class="details">
+                        <div class="title">
+                            <h2 style="text-align: center; margin:0;">Wordpress</h2>
+                        </div>
+                        <div class="para">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et
+                                dictum
+                                interdum, nisi lorem egestas vitae scel<span class="dots">...</span><span
+                                    class="more">erisque
+                                    enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+                                    vitae
+                                    massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
+                                    ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare
+                                    turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros
+                                    non
+                                    fermentum. Sed dapibus pulvinar nibh tempor porta.
+                                    erisque ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet
+                                    sed
+                                    ornare
+                                    turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros
+                                    non
+                                    fermentum. Sed dapibus pulvinar nibh tempor porta.
+                                    erisque</span></p>
+                        </div>
+                        <div class="pop-read-more">
+                            <a href="javascript:void(0)" class="readMoreLess">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-content shopify-popup-1">
+                    <div class="thumbnails">
+                        <img class="thumbnail" src="images/s1.jpg" alt="shopify" data-full="images/s1.jpg">
+                        <img class="thumbnail" src="images/s2.jpg" alt="shopify" data-full="images/s2.jpg">
+                        <img class="thumbnail" src="images/s3.avif" alt="shopify" data-full="images/s3.avif">
+                        <img class="thumbnail" src="images/s4.jpg" alt="shopify" data-full="images/s4.jpg">
+                    </div>
+                    <div class="product-view">
+                        <img class="main-image" src="images/s1.jpg" alt="Main Product Image">
+                    </div>
+                    <div class="details">
+                        <div class="title">
+                            <h2 style="text-align: center; margin:0;">shopify</h2>
+                        </div>
+                        <div class="para">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et
+                                dictum
+                                interdum, nisi lorem egestas vitae scel<span class="dots">...</span><span
+                                    class="more">erisque
+                                    enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+                                    vitae
+                                    massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
+                                    ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare
+                                    turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros
+                                    non
+                                    fermentum. Sed dapibus pulvinar nibh tempor porta.
+                                    erisque ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet
+                                    sed
+                                    ornare
+                                    turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros
+                                    non
+                                    fermentum. Sed dapibus pulvinar nibh tempor porta.
+                                    erisque</span></p>
+                        </div>
+                        <div class="pop-read-more">
+                            <a href="javascript:void(0)" class="readMoreLess">Read
+                                More</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="popup-content php-popup-1">
+                    <div class="thumbnails">
+                        <img class="thumbnail" src="images/p2.jpg" alt="php" data-full="images/p2.jpg">
+                        <img class="thumbnail" src="images/p1.jpg" alt="php" data-full="images/p1.jpg">
+                        <img class="thumbnail" src="images/p3.jpg" alt="php" data-full="images/p3.jpg">
+                        <img class="thumbnail" src="images/p4.jpg" alt="php" data-full="images/p4.jpg">
+                    </div>
+                    <div class="product-view">
+                        <img class="main-image" src="images/p2.jpg" alt="Main Product Image">
+                    </div>
+                    <div class="details">
+                        <div class="title">
+                            <h2 style="text-align: center; margin:0;">php</h2>
+                        </div>
+                        <div class="para">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et
+                                dictum
+                                interdum, nisi lorem egestas vitae scel<span class="dots">...</span><span
+                                    class="more">erisque
+                                    enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+                                    vitae
+                                    massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
+                                    ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare
+                                    turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros
+                                    non
+                                    fermentum. Sed dapibus pulvinar nibh tempor porta.
+                                    erisque ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet
+                                    sed
+                                    ornare
+                                    turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros
+                                    non
+                                    fermentum. Sed dapibus pulvinar nibh tempor porta.
+                                    erisque</span></p>
+                        </div>
+                        <div class="pop-read-more">
+                            <a href="javascript:void(0)" class="readMoreLess">Read
+                                More</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="popup-content react-popup-1">
+                    <div class="thumbnails">
+                        <img class="thumbnail" src="images/r1.jpg" alt="shopify" data-full="images/r1.jpg">
+                        <img class="thumbnail" src="images/r2.jpg" alt="shopify" data-full="images/r2.jpg">
+                        <img class="thumbnail" src="images/r3.png" alt="shopify" data-full="images/r3.png">
+                        <img class="thumbnail" src="images/r4.jpeg" alt="shopify" data-full="images/r4.jpeg">
+                    </div>
+                    <div class="product-view">
+                        <img class="main-image" src="images/r1.jpg" alt="Main Product Image">
+                    </div>
+                    <div class="details">
+                        <div class="title">
+                            <h2 style="text-align: center; margin:0;">React</h2>
+                        </div>
+                        <div class="para">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et
+                                dictum
+                                interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque
+                                    enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+                                    vitae
+                                    massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
+                                    ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare
+                                    turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros
+                                    non
+                                    fermentum. Sed dapibus pulvinar nibh tempor porta.
+                                    erisque ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet
+                                    sed
+                                    ornare
+                                    turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros
+                                    non
+                                    fermentum. Sed dapibus pulvinar nibh tempor porta.
+                                    erisque</span></p>
+                        </div>
+                        <div class="pop-read-more">
+                            <a href="javascript:void(0)" class="readMoreLess">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
