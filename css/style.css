@@ -289,3 +289,30 @@ img {
 .search input {
     width: 32% !important;
 }
+/* responsive mobile View */
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .wrapper.grid-view .language{
+        width: 100%;
+    }
+    .container h1{
+        font-size: 28px;
+    }
+     
+    .filter-button button:not(:last-child), .layout-btn button:not(:last-child){
+        margin-right: 10px;
+    }
+    #loadMoreButton, .filter-button button, .layout-btn button{
+        margin: 10px auto;
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+    .search input[type=text]{
+        width: 100% !important;
+        font-size: 14px;
+    }
+  }
